@@ -1,4 +1,6 @@
 // made by Jack Murphy / emptyvezzel
+// my first Java sketch! Between late 2014 and early 2015
+
 int mouseDown = 1;
 
 void setup() {
