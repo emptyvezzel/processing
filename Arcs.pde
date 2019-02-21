@@ -1,3 +1,5 @@
+// made by Jack Murphy / emptyvezzel
+
 float xoff = 0.0;
 float speed = 10;
 float arcpos = 30;
