@@ -1,3 +1,5 @@
+// made by Jack Murphy / emptyvezzel
+
 import ddf.minim.*;
 import peasy.*;
 
