@@ -1,3 +1,5 @@
+// made by Jack Murphy / emptyvezzel
+
 float d = 3;
 float n = 2;
 float q = 0;
