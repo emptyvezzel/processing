@@ -1,4 +1,4 @@
-// by Jack Murphy / emptyvezzel
+// made by Jack Murphy / emptyvezzel
 
 float plusRotate = 0;
 int startVal = 200;
