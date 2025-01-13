@@ -2,15 +2,23 @@ float bounceVar = 5;
 float armVar = 40;
 int bounceDir = 1;
 int armDir = 1;
+//minim vars
+import ddf.minim.*;
+Minim minim;
+AudioInput in;
+int sensitivity;
 
 void setup() {
-  //size(2000, 1000, P3D);
+  //size(800, 800, P3D);
   fullScreen(P3D);
   colorMode(HSB);
+  minim = new Minim(this);
+  in = minim.getLineIn();
 }
 
 void draw() {
   //background(0);
+  sensitivity = 1000;
   translate(width/2, height/2);
   rotateX(HALF_PI);
   rotateY(frameCount * 0.01);
@@ -31,9 +39,9 @@ void draw() {
       float z2 = sin(theta + t) * r * bounceVar;
       noStroke();
       fill(getColor(theta - t, (y / 100.0) + (frameCount / 50.0)));
-      vertex(x1, y, z1);
+      vertex(x1, y+in.left.get(round(abs(y))%1024)*sensitivity, z1);
       fill(getColor(theta + t, (y / 100.0) - (frameCount / 50.0)));
-      vertex(x2, y, z2);
+      vertex(x2, y+in.left.get(round(abs(y))%1024)*sensitivity, z2);
     }
     endShape();
     popMatrix();
