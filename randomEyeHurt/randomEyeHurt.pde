@@ -36,12 +36,6 @@ void draw() {
   image(img, 0, 0, width, height);  // the image is reduce to the size of the canvas to make it smooth
 }
 
-void mousePressed() { 
-  //noiseSeed(random(0xFFFFFF));
-  //noiseSeed(undefined);
+void mousePressed() {
   redraw();
-}
-
-void keyPressed() {
-  save("image.png");
 }

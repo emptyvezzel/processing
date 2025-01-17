@@ -13,7 +13,7 @@ void draw() {
   //background(255);
   translate(width/2, height-50);
   strokeWeight(10);
-  stroke(colVar, 255, 255);
+  stroke(colVar%255, 255, 255);
   colVar += 0.2;
   F(200);
   tree(1, 15, 200, proportion, map(mouseY, 0, height, 0, 90), map(mouseX, 0, width, 45, -45));
